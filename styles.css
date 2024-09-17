@@ -85,9 +85,10 @@ footer {
 /* Software grid styles */
 .software-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 20px;
+    grid-template-columns: repeat(3, 375px); /* 3 columns of 375px each */
+    gap: 20px; /* Space between cards */
     padding: 20px;
+    justify-content: center; /* Center the grid */
 }
 
 .round {
