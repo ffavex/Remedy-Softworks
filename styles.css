@@ -7,60 +7,66 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #202020;
+    background-color: #202020; /* Updated background color */
     color: #f0f0f0;
 }
 
+/* Header styles */
 header {
     background-color: #333;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
     color: #f0f0f0;
+    position: relative;
 }
 
-.container {
+.header-content {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.sidebar {
-    background-color: #2a2a2a;
-    width: 200px;
-    padding: 20px;
-    position: fixed;
-    top: 60px;
-    bottom: 0;
+.header-content h1 {
+    margin-left: 20px;
 }
 
-.sidebar ul {
-    list-style: none;
+.top-tabs {
+    margin-right: 20px;
 }
 
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.sidebar ul li a {
+.top-tabs a {
     color: #f0f0f0;
     text-decoration: none;
-    display: block;
     padding: 10px;
     border-radius: 5px;
+    margin: 0 5px;
 }
 
-.sidebar ul li a:hover {
+.top-tabs a:hover {
     background-color: #444;
 }
 
+/* Main content styles */
 main {
-    margin-left: 220px;
     padding: 20px;
-    flex: 1;
 }
 
-h1, h2 {
+.center-content {
+    text-align: center;
+    margin: 20px auto;
+}
+
+h2 {
     color: #f0f0f0;
+    margin-bottom: 10px;
 }
 
+p {
+    color: #ccc;
+}
+
+/* Footer styles */
 footer {
     background-color: #333;
     padding: 10px;
@@ -70,29 +76,15 @@ footer {
     bottom: 0;
     width: 100%;
 }
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
 
-/* Container for the grid */
-.container {
-    width: 90%;
-    margin: 0 auto;
+/* Software grid styles */
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
-/* Grid Layout for Software Cards */
-.software-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-/* Individual Software Card */
 .round {
     border-radius: 10px;
 }
@@ -166,4 +158,3 @@ body {
     background-color: #0078d4; /* Example color for Windows icon */
     margin-right: 5px;
 }
-
