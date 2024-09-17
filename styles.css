@@ -102,12 +102,13 @@ footer {
 .downloadOption {
     background-color: #202020; /* Background color for each software card */
     color: #fff; /* Text color for better contrast */
-    padding: 10px; /* Adjusted padding */
-    height: 195px; /* Fixed height */
+    padding: 15px; /* Adjusted padding */
+    height: 180px; /* Slightly reduced height */
     width: 375px; /* Fixed width */
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    position: relative; /* For positioning the download button */
 }
 
 .thumbnail {
@@ -116,29 +117,22 @@ footer {
 }
 
 .downloadTitle {
-    font-size: 16px; /* Adjusted font size to fit better */
+    font-size: 18px; /* Font size for title */
     margin: 0;
 }
 
 .description {
-    font-size: 12px; /* Adjusted font size to fit better */
-    margin: 10px 0;
-    overflow: hidden;
+    font-size: 14px; /* Font size for description */
+    margin: 10px auto; /* Centered description */
+    text-align: center;
+    flex-grow: 1; /* Allows description to take up available space */
 }
 
 .download_metadata {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.verticalCenter {
-    display: flex;
-    align-items: center;
-}
-
-.icon-download {
-    /* Define icon styling here, if using icon fonts or similar */
+    justify-content: flex-end; /* Align button to the right */
+    align-items: flex-end; /* Align button to the bottom */
+    margin-top: 10px;
 }
 
 .moreinfo-card-button,
