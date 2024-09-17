@@ -95,7 +95,7 @@ body {
 .nickname {
     font-family: "Roboto", sans-serif;
     color: #000000; /* Black color */
-    font-size: 30px; /* Larger font size */
+    font-size: 24px; /* Adjust font size */
     margin: 0;
     margin-bottom: 0px;
 }
@@ -123,9 +123,10 @@ body {
     border-right: .15em solid orange; /* The typewriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Centers the text */
-    letter-spacing: .15em; /* Adjust as needed */
+    letter-spacing: .1em; /* Adjust as needed */
+    font-size: 20px; /* Adjust font size */
     animation: 
-        typing 3.5s steps(40, end),
+        typing 5s steps(40, end), /* Increase delay by adjusting timing */
         blink-caret .75s step-end infinite;
 }
 
