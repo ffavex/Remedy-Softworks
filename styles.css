@@ -101,8 +101,12 @@ footer {
 .downloadOption {
     background-color: #202020; /* Background color for each software card */
     color: #fff; /* Text color for better contrast */
-    padding: 20px;
+    padding: 10px; /* Adjusted padding */
+    height: 195px; /* Fixed height */
+    width: 375px; /* Fixed width */
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .thumbnail {
@@ -111,13 +115,14 @@ footer {
 }
 
 .downloadTitle {
-    font-size: 18px;
+    font-size: 16px; /* Adjusted font size to fit better */
     margin: 0;
 }
 
 .description {
-    font-size: 14px;
+    font-size: 12px; /* Adjusted font size to fit better */
     margin: 10px 0;
+    overflow: hidden;
 }
 
 .download_metadata {
@@ -140,11 +145,12 @@ footer {
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px; /* Adjusted padding */
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
     display: inline-block;
+    font-size: 12px; /* Adjusted font size to fit better */
 }
 
 .moreinfo-card-button:hover,
