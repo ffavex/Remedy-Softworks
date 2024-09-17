@@ -159,10 +159,4 @@ footer {
     border-radius: 0;
 }
 
-.windows {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-color: #0078d4; /* Example color for Windows icon */
-    margin-right: 5px;
-}
+
