@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 /* Basic reset */
 * {
     margin: 0;
@@ -19,8 +17,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1); /* Change to white */
-    color: black; /* Change text color to black */
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent background */
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,7 +93,7 @@ body {
 .nickname {
     font-family: "Roboto", sans-serif;
     color: #000000; /* Black color */
-    font-size: 24px; /* Adjust font size */
+    font-size: 30px; /* Larger font size */
     margin: 0;
     margin-bottom: 0px;
 }
@@ -120,14 +118,18 @@ body {
 
 .typewriter {
     font-family: "Roboto", sans-serif;
-    font-size: 20px; /* Adjust font size as needed */
+    font-size: 20px; /* Font size for the typewriter effect */
     color: #000000; /* Black color for text */
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    border-right: .15em solid orange; /* The typewriter cursor */
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid orange; /* Cursor */
     animation: 
-        typing 5s steps(40, end) infinite, /* Infinite loop for typing effect */
+        typing 4s steps(40, end),
         blink-caret .75s step-end infinite;
+    text-align: center; /* Center align text */
+    margin: 0 auto; /* Center align text */
+    max-width: 100%; /* Prevent text from overflowing */
+    word-wrap: break-word; /* Break long words if needed */
 }
 
 @keyframes typing {
@@ -139,34 +141,6 @@ body {
     from, to { border-color: transparent; }
     50% { border-color: orange; }
 }
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    flex-direction: column;
-}
-
-.rectangle {
-    width: 320px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #ffffff; /* White color */
-    overflow: hidden; /* Hide overflowing text */
-    position: relative;
-    border-radius: 20px;
-    z-index: 1;
-    margin: 10px;
-}
-
 
 .social-links {
     display: flex;
