@@ -118,23 +118,26 @@ body {
     gap: 20px;
 }
 
-.typewriter {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px; /* Font size for the typewriter effect */
-    color: #000000; /* Black color for text */
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: .15em solid orange; /* Cursor */
-    animation: typing 5s steps(40, end), blink-caret .75s step-end infinite;
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Centers the text */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
 }
 
+/* The typing effect */
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from { width: 0 }
+    to { width: 100% }
 }
 
+/* The typewriter cursor effect */
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
+    from, to { border-color: transparent }
     50% { border-color: orange; }
 }
 
