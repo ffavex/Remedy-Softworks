@@ -51,7 +51,7 @@ body {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #ffffff; /* Updated to white */
+    background-color: #ffffff; /* White color */
     overflow: hidden;
     position: relative;
     border-radius: 20px;
@@ -73,8 +73,8 @@ body {
 
 .nickname {
     font-family: "Roboto", sans-serif;
-    color: #000000; /* Updated to black */
-    font-size: 30px; /* Increased font size */
+    color: #000000; /* Black color */
+    font-size: 30px; /* Larger font size */
     margin: 0;
     margin-bottom: 0px;
 }
@@ -99,11 +99,11 @@ body {
 
 .typewriter {
     font-family: "Roboto", sans-serif;
-    font-size: 20px; /* Increased font size */
-    color: #000000; /* Updated to black */
+    font-size: 20px; /* Font size for the typewriter effect */
+    color: #000000; /* Black color for text */
     overflow: hidden;
     white-space: nowrap;
-    border-right: .15em solid orange;
+    border-right: .15em solid orange; /* Cursor */
     animation: typing 5s steps(40, end), blink-caret .75s step-end infinite;
 }
 
@@ -147,7 +147,7 @@ body {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #ffffff; /* Updated to white */
+    background-color: #ffffff; /* White color */
     overflow: hidden;
     position: relative;
     border-radius: 20px;
@@ -194,7 +194,7 @@ body {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #ffffff; /* Updated to white */
+    background-color: #ffffff; /* White color */
     overflow: hidden;
     position: absolute;
     border-radius: 20px;
@@ -229,7 +229,7 @@ body {
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: #ffffff; /* Updated to white */
+    background-color: #ffffff; /* White color */
     border-radius: 20px;
     margin-left: -20px;
     transform: translateX(0);
