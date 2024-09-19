@@ -22,12 +22,12 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-      text-shadow: 
-                0 0 10px rgba(128, 0, 128, 0.8),   /* Soft outer glow */
-                0 0 20px rgba(128, 0, 128, 0.6),   /* Stronger glow */
-                0 0 30px rgba(128, 0, 128, 0.4),   /* Faded glow */
-                0 0 40px rgba(128, 0, 128, 0.3),   /* Extended glow */
-                0 0 50px rgba(128, 0, 128, 0.2);   /* Very soft glow */
+         text-shadow: 
+        0 0 5px rgba(128, 0, 128, 0.7),   /* Soft shadow */
+        0 0 10px rgba(128, 0, 128, 0.5),  /* Slightly stronger shadow */
+        0 0 15px rgba(128, 0, 128, 0.4),  /* Stronger shadow */
+        0 0 20px rgba(128, 0, 128, 0.3),  /* Extended shadow */
+        0 0 25px rgba(128, 0, 128, 0.2);  /* Faded shadow *
 }
 
 /* Main content styles */
