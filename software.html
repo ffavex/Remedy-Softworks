@@ -108,9 +108,30 @@
         </div>
     </main>
 <script>
-    const overlay = document.getElementById('overlay');
+    // Create the overlay element
+    const overlay = document.createElement('div');
+    overlay.id = 'overlay';
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
+    overlay.style.color = 'white';
+    overlay.style.display = 'flex';
+    overlay.style.justifyContent = 'center';
+    overlay.style.alignItems = 'center';
+    overlay.style.fontSize = '2em';
+    overlay.style.zIndex = '9999';
+    overlay.style.cursor = 'pointer';
+    overlay.innerHTML = '<span>[Click Me]</span>';
+    document.body.appendChild(overlay);
+
+    // Hide the content by default
     const content = document.getElementById('content');
-    const audio = new Audio('ss.mp3'); // Update to the correct audio file path
+    content.style.display = 'none';
+
+    const audio = new Audio('ss.mp3'); // Update with the correct path
 
     overlay.addEventListener('click', () => {
         overlay.style.display = 'none'; // Hide the overlay
