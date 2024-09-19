@@ -22,6 +22,9 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    text-shadow: 0 0 5px rgba(128, 0, 128, 0.8), /* Purple glow */
+                        0 0 10px rgba(128, 0, 128, 0.6), /* Stronger glow */
+                     0 0 15px rgba(128, 0, 128, 0.4); /* Faded glow */
 }
 
 /* Main content styles */
