@@ -138,3 +138,15 @@ footer {
     text-align: center;
     color: #f0f0f0;
 }
+/* New platform icons styles */
+.platform-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    margin: 10px 0; /* Spacing above and below icons */
+}
+
+.platform-icons img {
+    width: 16px; /* Smaller size for the icons */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 3px; /* Spacing between icons */
+}
