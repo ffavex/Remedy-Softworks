@@ -6,50 +6,22 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #202020; /* Background color */
-    color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Darker background for modern look */
+    color: #e0e0e0;
 }
 
 /* Header styles */
 header {
-    background-color: #333; /* Slightly different from the main background for contrast */
-    padding: 10px;
+    background-color: #1e1e1e;
+    padding: 15px;
     color: #f0f0f0;
-    position: relative;
-    width: 100%;
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.header-content h1 {
-    margin-left: 20px;
-    font-size: 24px;
-}
-
-.top-tabs {
-    display: flex;
-}
-
-.top-tabs a {
-    color: #fff;
-    background-color: #2F78DE; /* Purple color for buttons */
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-left: 10px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.top-tabs a:hover {
-    background-color: #8e24aa; /* Lighter purple for hover effect */
+    text-align: center;
 }
 
 /* Main content styles */
@@ -57,58 +29,42 @@ main {
     padding: 20px;
 }
 
-.center-content {
-    text-align: center;
-    margin: 20px auto;
-}
-
-h2 {
-    color: #f0f0f0;
-    margin-bottom: 10px;
-}
-
-p {
-    color: #ccc;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333; /* Same as header for consistency */
-    padding: 10px;
-    text-align: center;
-    color: #f0f0f0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Software grid styles */
 .software-grid {
     display: grid;
-    grid-template-columns: repeat(3, 375px); /* 3 columns of 375px each */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Responsive grid */
     gap: 20px; /* Space between cards */
     padding: 20px;
-    justify-content: center; /* Center the grid */
 }
 
 .round {
     border-radius: 10px;
+    overflow: hidden; /* Prevent content from spilling out */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effects */
 }
 
 .border1 {
-    border: 1px solid #ddd;
+    border: 1px solid #444; /* Darker border */
+    background-color: #202020; /* Card background */
 }
 
 .downloadOption {
-    background-color: #202020; /* Background color for each software card */
-    color: #fff; /* Text color for better contrast */
-    padding: 15px;
-    height: 180px; /* Slightly reduced height */
-    width: 375px; /* Fixed width */
-    overflow: hidden;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    position: relative; /* Position relative for absolute positioning of children */
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+
+.downloadOption:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
 }
 
 .thumbnail {
@@ -117,46 +73,67 @@ footer {
 }
 
 .downloadTitle {
-    font-size: 18px;
-    margin: 0;
+    font-size: 20px;
+    margin: 10px 0;
 }
 
 .description {
     font-size: 14px;
-    margin: 10px auto;
     text-align: center;
-    flex-grow: 1; /* Allows description to take up available space */
+    margin-bottom: 15px;
 }
 
+/* Tag styles */
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.detected {
+    background-color: #f44336; /* Red */
+}
+
+.undetected {
+    background-color: #4caf50; /* Green */
+}
+
+.coming-soon {
+    background-color: #ff9800; /* Orange */
+}
+
+/* Download button styles */
 .download_metadata {
     display: flex;
-    justify-content: flex-end; /* Align button container to the right */
-    align-items: flex-end; /* Align button container to the bottom */
-    position: absolute; /* Absolute positioning for button container */
-    bottom: 10px; /* Adjust bottom margin */
-    right: 10px; /* Adjust right margin */
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.moreinfo-card-button,
 .release-card-button {
-    background-color: #333;
+    background-color: #3e8e41;
     color: #fff;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    display: inline-block;
-    font-size: 12px; /* Adjusted font size to fit better */
+    font-size: 14px;
+    transition: background-color 0.3s;
 }
 
-.moreinfo-card-button:hover,
 .release-card-button:hover {
-    background-color: #555;
+    background-color: #45a049; /* Lighter green on hover */
 }
 
-.lessRound {
-    border-radius: 0;
+/* Footer styles */
+footer {
+    background-color: #1e1e1e;
+    padding: 10px;
+    text-align: center;
+    color: #f0f0f0;
 }
-
-
