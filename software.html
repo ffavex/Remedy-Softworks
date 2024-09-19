@@ -6,11 +6,6 @@
     <title>Remedy Softworks</title>
     <script type="text/javascript" src="jquery.1.11.1.js"></script>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
-    <style>
-        #overlay {
-    pointer-events: auto; /* Ensure it can capture click events */
-}
-    </style>
 </head>
 <body>
     
@@ -82,46 +77,12 @@
 
 
 </div>
-
             </div>
         </div>
     </main>
-<script>
-    // Create the overlay element
-    const overlay = document.createElement('div');
-    overlay.id = 'overlay';
-    overlay.style.position = 'fixed';
-    overlay.style.top = '0';
-    overlay.style.left = '0';
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)'; // Darker for better visibility
-    overlay.style.color = 'white';
-    overlay.style.display = 'flex';
-    overlay.style.justifyContent = 'center';
-    overlay.style.alignItems = 'center';
-    overlay.style.fontSize = '2em';
-    overlay.style.zIndex = '9999';
-    overlay.style.cursor = 'pointer';
-    overlay.innerHTML = '<span>[Click Me]</span>';
-    document.body.appendChild(overlay);
-
-    // Hide the content by default
-    const content = document.getElementById('content');
-    content.style.display = 'none';
-
-    const audio = new Audio('ss.mp3'); // Update with the correct path
-
-    overlay.addEventListener('click', () => {
-        overlay.style.display = 'none'; // Hide the overlay
-        content.style.display = 'block'; // Show the main content
-        audio.play().catch(error => {
-            console.error("Audio playback failed:", error);
-        }); // Play the music
-    });
-</script>
     
 <script type="text/javascript" src="jquery.1.11.1.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
      
