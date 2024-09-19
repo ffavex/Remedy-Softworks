@@ -6,8 +6,32 @@
     <title>Remedy Softworks</title>
     <script type="text/javascript" src="jquery.1.11.1.js"></script>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <style>
+        /* Overlay Styles */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em; /* Adjust text size */
+            z-index: 9999; /* Ensure it's on top */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+    </style>
+    
 </head>
 <body>
+
+<div id="overlay">
+    <span>[Click Me]</span>
+</div>
+
     
     <header>
         <div class="header-content">
