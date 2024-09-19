@@ -60,6 +60,7 @@ main {
     justify-content: space-between;
     position: relative;
     cursor: pointer;
+    height: 200px; /* Adjust height */
 }
 
 .downloadOption:hover {
@@ -73,12 +74,12 @@ main {
 }
 
 .downloadTitle {
-    font-size: 20px;
+    font-size: 18px; /* Slightly smaller font size */
     margin: 10px 0;
 }
 
 .description {
-    font-size: 14px;
+    font-size: 13px; /* Slightly smaller font size */
     text-align: center;
     margin-bottom: 15px;
 }
@@ -86,11 +87,11 @@ main {
 /* Tag styles */
 .tag {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 5px 10px;
+    bottom: 10px; /* Position it at the bottom */
+    left: 10px; /* Position it to the left */
+    padding: 3px 6px; /* Smaller padding */
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 10px; /* Smaller font size */
     font-weight: bold;
     color: #fff;
 }
