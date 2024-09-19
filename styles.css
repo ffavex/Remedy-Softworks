@@ -111,9 +111,15 @@ main {
 /* Download button styles */
 .download_metadata {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-end; /* Align the button to the right */
+    align-items: flex-end; /* Align the button at the bottom */
+    position: absolute; /* Positioning for absolute alignment */
+    bottom: 10px; /* Adjust bottom spacing */
+    right: 10px; /* Adjust right spacing */
 }
+
+
+
 
 .release-card-button {
     background-color: #3e8e41;
