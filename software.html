@@ -6,6 +6,11 @@
     <title>Remedy Softworks</title>
     <script type="text/javascript" src="jquery.1.11.1.js"></script>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <style>
+        #overlay {
+    pointer-events: auto; /* Ensure it can capture click events */
+}
+    </style>
 </head>
 <body>
     
@@ -90,7 +95,7 @@
     overlay.style.left = '0';
     overlay.style.width = '100%';
     overlay.style.height = '100%';
-    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)'; // Darker for better visibility
     overlay.style.color = 'white';
     overlay.style.display = 'flex';
     overlay.style.justifyContent = 'center';
